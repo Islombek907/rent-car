@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Car</title>
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo">
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Vehicles</a></li>
+                    <li><a href="#">Details</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header__help">
+                <div class="help__icon">
+                    <img src="images/call.svg" alt="">
+                </div>
+                <div class="help__text">
+                    <span>Need help?</span>
+                    <a href="tel:+998712471680">+998 71 247-1680</a>
+                </div>
+            </div>
+        </div>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <span class="hero__label">CITY RENT CAR</span>
+                    <h1 class="hero__title">The best car rental in Uzbekistan</h1>
+                    <p class="hero__subtitle">BOOK NOW AND GET THE BEST DEAL</p>
+                    <div class="hero__actions">
+                        <a href="#" class="btn btn--primary">About Us <img class="arrow__action" src="images/arrow.svg"
+                                alt="arrow"></a>
+                        <a href="#" class="btn btn--secondary">Book Car <img class="arrow__action"
+                                src="images/arrow.svg" alt="arrow"></a>
+                    </div>
+                </div>
+                <div class="booking">
+                    <h2 class="booking__title">Book your car</h2>
+                    <form class="booking__form">
+                        <div class="form-group">
+                            <select id="car-type" name="carType">
+                                <option value="">Car type</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="placeRental" id="place-rental">
+                                <option value="">Place of rental</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="placeReturn" id="place-return">
+                                <option value="">Place of return</option>
+                            </select>
+                        </div>
+                        <div class="form-group date">
+                            <label for="rental-date">Rental date</label>
+                            <input type="date" id="rental-date" name="rentalDate">
+                        </div>
+                        <div class="form-group date">
+                            <label for="return-date">Return date</label>
+                            <input type="date" id="return-date" name="returnDate">
+                        </div>
+                        <button type="submit" class="btn btn--accent">
+                            Book now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <section class="journey">
+            <div class="container">
+                <div class="journey__features">
+                    <div class="feature">
+                        <img src="images/location.svg" alt="Availability" class="feature__icon">
+                        <h3 class="feature__title">Availability</h3>
+                        <p class="feature__text">
+                            Diam tincidunt tincidunt erat at semper fermentum. Id ultricies quis
+                        </p>
+                    </div>
+                    <div class="feature">
+                        <img src="images/car.svg" alt="Comfort" class="feature__icon">
+                        <h3 class="feature__title">Comfort</h3>
+                        <p class="feature__text">
+                            Gravida auctor fermentum morbi vulputate
+                            ac egestas orcietium convallis
+                        </p>
+                    </div>
+                    <div class="feature">
+                        <img src="images/wallet.svg" alt="Savings">
+                        <h3 class="feature__title">Savings</h3>
+                        <p class="feature__text">
+                            Pretium convallis id diam sed commodo vestibulum lobortis volutpat
+                        </p>
+                    </div>
+                </div>
+                <h2 class="journey__title">
+                    We are here for the journey,
+                    wherever that takes you.
+                </h2>
+            </div>
+            <img class="mouse" src="images/mouse.svg" alt="mouse">
+        </section>
+        <div class="journey__image">
+            <img class="big-car" src="images/big-car.png" alt="big-car">
+        </div>
+        <section class="container cars">
+            <div class="cars__header">
+                <h2 class="cars__title">
+                    Choose the car that<br>
+                    suits you
+                </h2>
+                <a href="#" class="cars__view-all">
+                    View All →
+                </a>
+            </div>
+            <div class="cars__grid">
+                <article class="car-card">
+                    <img src="images/car-1.png" alt="car" class="car-card__image">
+                    <div class="car-card__info">
+                        <div class="car-card__header">
+                            <h3 class="car-card__name">Mercedes</h3>
+                            <span class="car-card__price">Sedan</span>
+                        </div>
+                        <div class="car-card__price">
+                            <span class="car-card__amount">$25</span>
+                            <span class="car-card__day">per day</span>
+                        </div>
+                    </div>
+                    <ul class="car-card__features">
+                        <li>
+                            <img src="images/automat.svg" alt="automat">
+                            <span class="feature__type">Automat</span>
+                        </li>
+                        <li>
+                            <img src="images/fuel.svg" alt="fuel">
+                            <span class="feature__type">PB 95</span>
+                        </li>
+                        <li>
+                            <img src="images/air.svg" alt="air">
+                            <span class="feature__type">Air Conditioner</span>
+                        </li>
+                    </ul>
+                    <button class="car-card__button">View Details</button>
+                </article>
+                <article class="car-card">
+                    <img src="images/car-2.png" alt="car" class="car-card__image">
+                    <div class="car-card__info">
+                        <div class="car-card__header">
+                            <h3 class="car-card__name">Mercedes</h3>
+                            <span class="car-card__price">Sport</span>
+                        </div>
+                        <div class="car-card__price">
+                            <span class="car-card__amount">$50</span>
+                            <span class="car-card__day">per day</span>
+                        </div>
+                    </div>
+                    <ul class="car-card__features">
+                        <li>
+                            <img src="images/automat.svg" alt="automat">
+                            <span class="feature__type">Automat</span>
+                        </li>
+                        <li>
+                            <img src="images/fuel.svg" alt="fuel">
+                            <span class="feature__type">PB 95</span>
+                        </li>
+                        <li>
+                            <img src="images/air.svg" alt="air">
+                            <span class="feature__type">Air Conditioner</span>
+                        </li>
+                    </ul>
+                    <button class="car-card__button">View Details</button>
+                </article>
+                <article class="car-card">
+                    <img src="images/car-3.png" alt="car" class="car-card__image">
+                    <div class="car-card__info">
+                        <div class="car-card__header">
+                            <h3 class="car-card__name">Mercedes</h3>
+                            <span class="car-card__price">Sedan</span>
+                        </div>
+                        <div class="car-card__price">
+                            <span class="car-card__amount">$45</span>
+                            <span class="car-card__day">per day</span>
+                        </div>
+                    </div>
+                    <ul class="car-card__features">
+                        <li>
+                            <img src="images/automat.svg" alt="automat">
+                            <span class="feature__type">Automat</span>
+                        </li>
+                        <li>
+                            <img src="images/fuel.svg" alt="fuel">
+                            <span class="feature__type">PB 95</span>
+                        </li>
+                        <li>
+                            <img src="images/air.svg" alt="air">
+                            <span class="feature__type">Air Conditioner</span>
+                        </li>
+                    </ul>
+                    <button class="car-card__button">View Details</button>
+                </article>
+                <article class="car-card">
+                    <img src="images/car-4.png" alt="car" class="car-card__image">
+                    <div class="car-card__info">
+                        <div class="car-card__header">
+                            <h3 class="car-card__name">Porsche</h3>
+                            <span class="car-card__price">SUV</span>
+                        </div>
+                        <div class="car-card__price">
+                            <span class="car-card__amount">$40</span>
+                            <span class="car-card__day">per day</span>
+                        </div>
+                    </div>
+                    <ul class="car-card__features">
+                        <li>
+                            <img src="images/automat.svg" alt="automat">
+                            <span class="feature__type">Automat</span>
+                        </li>
+                        <li>
+                            <img src="images/fuel.svg" alt="fuel">
+                            <span class="feature__type">PB 95</span>
+                        </li>
+                        <li>
+                            <img src="images/air.svg" alt="air">
+                            <span class="feature__type">Air Conditioner</span>
+                        </li>
+                    </ul>
+                    <button class="car-card__button">View Details</button>
+                </article>
+                <article class="car-card">
+                    <img src="images/car-5.png" alt="car" class="car-card__image">
+                    <div class="car-card__info">
+                        <div class="car-card__header">
+                            <h3 class="car-card__name">Toyota</h3>
+                            <span class="car-card__price">Sedan</span>
+                        </div>
+                        <div class="car-card__price">
+                            <span class="car-card__amount">$35</span>
+                            <span class="car-card__day">per day</span>
+                        </div>
+                    </div>
+                    <ul class="car-card__features">
+                        <li>
+                            <img src="images/automat.svg" alt="automat">
+                            <span class="feature__type">Automat</span>
+                        </li>
+                        <li>
+                            <img src="images/fuel.svg" alt="fuel">
+                            <span class="feature__type">PB 95</span>
+                        </li>
+                        <li>
+                            <img src="images/air.svg" alt="air">
+                            <span class="feature__type">Air Conditioner</span>
+                        </li>
+                    </ul>
+                    <button class="car-card__button">View Details</button>
+                </article>
+                <article class="car-card">
+                    <img src="images/car-6.png" alt="car" class="car-card__image">
+                    <div class="car-card__info">
+                        <div class="car-card__header">
+                            <h3 class="car-card__name">Porsche</h3>
+                            <span class="car-card__price">SUV</span>
+                        </div>
+                        <div class="car-card__price">
+                            <span class="car-card__amount">$50</span>
+                            <span class="car-card__day">per day</span>
+                        </div>
+                    </div>
+                    <ul class="car-card__features">
+                        <li>
+                            <img src="images/automat.svg" alt="automat">
+                            <span class="feature__type">Automat</span>
+                        </li>
+                        <li>
+                            <img src="images/fuel.svg" alt="fuel">
+                            <span class="feature__type">PB 95</span>
+                        </li>
+                        <li>
+                            <img src="images/air.svg" alt="air">
+                            <span class="feature__type">Air Conditioner</span>
+                        </li>
+                    </ul>
+                    <button class="car-card__button">View Details</button>
+                </article>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="advantages__line-wrapper">
+                <svg viewBox="0 0 1438 1508" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1441.34 136.507C1441.34 136.507 1389.7 151.742 1290.37 151.742C1070.78 151.742 897.135 14.635 583.172 14.635C355.408 14.635 -57.3631 121.594 -57.3631 544.332C-57.3631 1001.35 330.573 1047.84 494.572 1047.84C578.635 1047.84 819.804 977.548 819.804 733.803C819.804 564.36 782.763 279.535 982.911 279.535C1098.35 279.535 1153.31 368.369 1153.31 474.048C1153.31 865.079 819.804 917.823 819.804 1251.49C819.804 1465.87 1022.39 1493.21 1096.81 1493.21C1238.75 1493.21 1424.8 1378.47 1540.56 1378.47"
+                        stroke="#FF9E0C" stroke-width="20" stroke-linecap="round" stroke-linejoin="bevel" />
+                </svg>
+            </div>
+            <div class="container">
+                <div class="advantage-row">
+                    <div class="advantage-row__image driver">
+                        <img src="images/driver.jpg" alt="driver">
+                    </div>
+                    <div class="advantage-row__content">
+                        <h3 class="advantage-row__title">Rent a car with driver</h3>
+                        <p class="advantage-row__text">
+                            Start your journey with a driver transfer service. Our drivers can wait for you when you
+                            arrive at your destination and return to the airport for your flight home.
+                        </p>
+                    </div>
+                </div>
+                <div class="advantage-row">
+                    <div class="advantage-row__content fuel">
+                        <h3 class="advantage-row__title">Full tank of fuel</h3>
+                        <p class="advantage-row__text">
+                            We offer a number of convenient car rental options. Pay in advance for a full tank of fuel
+                            and bring it back empty.
+                        </p>
+                    </div>
+                    <div class="advantage-row__image">
+                        <img src="images/full.jpg" alt="full">
+                    </div>
+                </div>
+                <div class="advantage-row">
+                    <div class="advantage-row__image">
+                        <img src="images/happy.jpg" alt="happy">
+                    </div>
+                    <div class="advantage-row__content fuel">
+                        <h3 class="advantage-row__title modern">NEW AND MODERN CARS</h3>
+                        <p class="advantage-row__text">
+                            “City rent car” is a new car that, in addition to the obvious advantages in the form of easy
+                            and smooth driving, has the latest equipment.
+                        </p>
+                    </div>
+                </div>
+                <div class="advantage-row">
+                    <div class="advantage-row__content fuel">
+                        <h3 class="advantage-row__title">
+                            FULL INSURANCE OF CASCO, CTP
+                        </h3>
+                        <p class="advantage-row__text">
+                            Full car insurance in case of damage or theft.
+                            Each car is fully serviced. Just get behind the wheel and drive, to meet new cases and
+                            discoveries!
+                        </p>
+                    </div>
+                    <div class="advantage-row__image">
+                        <img src="images/sunset.png" alt="sunset">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <img class="left-quote" src="images/left-quotes.svg" alt="left-quotes">
+            <img class="right-quote" src="images/right-quotes.svg" alt="right-quotes">
+            <div class="testimonials__header">
+                <span class="testimonials__label">TESTIMONIALS</span>
+                <h2 class="testimonials__title">What people say about us?</h2>
+            </div>
+            <div class="swiper testimonials-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <article class="testimonial">
+                            <img src="images/charlie.png" alt="charlie">
+                            <div class="testimonial__content">
+                                <div class="testimonial__rating">
+                                    <span class="testimonial__score">5.0 <span class="rating">stars</span></span>
+                                    <img width="136px" src="images/stars.svg" alt="stars">
+                                </div>
+                                <p class="testimonial__text">
+                                    “I feel very secure when using caretall's services. Your customer care team is
+                                    very enthusiastic and the driver is always on time.”
+                                </p>
+                                <div class="testimonial__author">
+                                    <strong class="testimonial__name">Charlie Johnson</strong>
+                                    <span class="testimonial__location">From New York, US</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="testimonial">
+                            <img src="images/charlie.png" alt="charlie">
+                            <div class="testimonial__content">
+                                <div class="testimonial__rating">
+                                    <span class="testimonial__score">5.0 <span class="rating">stars</span></span>
+                                    <img width="136px" src="images/stars.svg" alt="stars">
+                                </div>
+                                <p class="testimonial__text">
+                                    “I feel very secure when using caretall's services. Your customer care team is
+                                    very enthusiastic and the driver is always on time.”
+                                </p>
+                                <div class="testimonial__author">
+                                    <strong class="testimonial__name">Charlie Johnson</strong>
+                                    <span class="testimonial__location">From New York, US</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="testimonial">
+                            <img src="images/charlie.png" alt="charlie">
+                            <div class="testimonial__content">
+                                <div class="testimonial__rating">
+                                    <span class="testimonial__score">5.0 <span class="rating">stars</span></span>
+                                    <img width="136px" src="images/stars.svg" alt="stars">
+                                </div>
+                                <p class="testimonial__text">
+                                    “I feel very secure when using caretall's services. Your customer care team is
+                                    very enthusiastic and the driver is always on time.”
+                                </p>
+                                <div class="testimonial__author">
+                                    <strong class="testimonial__name">Charlie Johnson</strong>
+                                    <span class="testimonial__location">From New York, US</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="testimonial">
+                            <img src="images/charlie.png" alt="charlie">
+                            <div class="testimonial__content">
+                                <div class="testimonial__rating">
+                                    <span class="testimonial__score">5.0 <span class="rating">stars</span></span>
+                                    <img width="136px" src="images/stars.svg" alt="stars">
+                                </div>
+                                <p class="testimonial__text">
+                                    “I feel very secure when using caretall's services. Your customer care team is
+                                    very enthusiastic and the driver is always on time.”
+                                </p>
+                                <div class="testimonial__author">
+                                    <strong class="testimonial__name">Charlie Johnson</strong>
+                                    <span class="testimonial__location">From New York, US</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="testimonial">
+                            <img src="images/charlie.png" alt="charlie">
+                            <div class="testimonial__content">
+                                <div class="testimonial__rating">
+                                    <span class="testimonial__score">5.0 <span class="rating">stars</span></span>
+                                    <img width="136px" src="images/stars.svg" alt="stars">
+                                </div>
+                                <p class="testimonial__text">
+                                    “I feel very secure when using caretall's services. Your customer care team is
+                                    very enthusiastic and the driver is always on time.”
+                                </p>
+                                <div class="testimonial__author">
+                                    <strong class="testimonial__name">Charlie Johnson</strong>
+                                    <span class="testimonial__location">From New York, US</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="brands">
+            <div class="swiper brands-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="brand-card">
+                            <img src="images/honda.svg" alt="honda">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-card">
+                            <img src="images/jaguar.svg" alt="jaguar">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-card">
+                            <img src="images/nissan.svg" alt="nissan">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-card">
+                            <img src="images/volvo.svg" alt="volvo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-card">
+                            <img src="images/audi.svg" alt="audi">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="facts">
+            <img class="backround-trace" src="images/trace.svg" alt="trace">
+            <img class="background-car" src="images/ghost-car.svg" alt="ghost-car">
+            <div class="container">
+                <div class="facts__header">
+                    <h4>Facts in numbers</h4>
+                    <p>
+                        Amet cras hac orci lacus. Faucibus ipsum arcu lectus nibh sapien bibendum ullamcorper in. Diam
+                        tincidunt tincidunt erat at semper fermentum
+                    </p>
+                </div>
+                <div class="facts__list">
+                    <div class="fact-card">
+                        <div class="fact-card__icon">
+                            <img src="images/orange-car.svg" alt="orange-car">
+                        </div>
+                        <div class="fact-card__info">
+                            <h4>540+</h4>
+                            <span>cars</span>
+                        </div>
+                    </div>
+                    <div class="fact-card">
+                        <div class="fact-card__icon">
+                            <img src="images/orange-user.svg" alt="orange-user">
+                        </div>
+                        <div class="fact-card__info">
+                            <h4>20k+</h4>
+                            <span>customers</span>
+                        </div>
+                    </div>
+                    <div class="fact-card">
+                        <div class="fact-card__icon">
+                            <img src="images/calendar.svg" alt="calendar">
+                        </div>
+                        <div class="fact-card__info">
+                            <h4>25+</h4>
+                            <span>Years</span>
+                        </div>
+                    </div>
+                    <div class="fact-card">
+                        <div class="fact-card__icon">
+                            <img src="images/speed.svg" alt="speed">
+                        </div>
+                        <div class="fact-card__info">
+                            <h4>20m+</h4>
+                            <span>Miles</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container footer__wrapper">
+                <div class="footer__left">
+                    <div class="footer__logo">
+                        <img src="images/logo.svg" alt="logo">
+                    </div>
+                    <p class="footer__hashtag">#fortheloveoftheroad</p>
+                    <div class="footer__socials">
+                        <a href="#"><img src="images/instagram.svg" alt="instagram"></a>
+                        <a href="#"><img src="images/facebook.svg" alt="facebook"></a>
+                        <a href="#"><img src="images/tic-tok.svg" alt="tic-tok"></a>
+                        <a href="#"><img src="images/youtube.svg" alt="youtube"></a>
+                    </div>
+                    <div class="footer__bottom">
+                        <p class="reserved">
+                            © 2025 City Rent Car. All rights reserved.
+                        </p>
+                        <div class="footer__links">
+                            <a href="#">Privacy Notice</a>
+                            <a href="#">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__center">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Cars</a></li>
+                        <li><a href="#">Rental conditions</a></li>
+                        <li><a href="#">News and promotions</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <div class="footer__payments">
+                        <img src="images/mastercard.svg" alt="mastercard">
+                        <img src="images/visa.svg" alt="visa">
+                        <img src="images/humo.svg" alt="humo">
+                        <img src="images/uzcard.svg" alt="uzcard">
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d23980.653989988306!2d69.2844133!3d41.2962064!3m2!1i1024!2i768!4f13.1!2m1!1s170A%20Saikhun%20St%20Mirabad%20district%20Tashkent%20100105!5e0!3m2!1sru!2s!4v1766379093259!5m2!1sru!2s"
+                            width="207" height="207" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <address class="footer__address">
+                        170A Saikhun St., Mirabad district, Tashkent, 100105
+                    </address>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

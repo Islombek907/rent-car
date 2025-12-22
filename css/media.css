@@ -1,0 +1,248 @@
+@media (max-width: 1275px) {
+    .header__inner {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .hero .container {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .cars__header {
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cars__grid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cars__title {
+        margin-bottom: 25px;
+    }
+
+    .car-card__info {
+        justify-content: space-around;
+    }
+
+    .booking {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1560px) {
+    .testimonial {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .testimonial__author {
+        margin-bottom: 15px;
+    }
+
+    .footer__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer__bottom {
+        margin-bottom: 55px;
+    }
+
+    .footer__right {
+        align-items: center;
+    }
+
+    .background-car {
+        left: 272px;
+    }
+
+    .journey__title {
+        font-size: 44px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1324px) {
+    .background-car {
+        left: 255px;
+    }
+}
+
+@media (max-width: 1125px) {
+    .background-car {
+        left: 137px;
+    }
+
+    .backround-trace {
+        top: 115px;
+        left: -72px;
+    }
+
+    .facts__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 1022px) {
+    .footer__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 30px;
+    }
+
+    .big-car {
+        width: 60%;
+    }
+
+    .footer__center {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .footer__right {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 925px) {
+    .right-quote {
+        width: 25%;
+    }
+
+    .left-quote {
+        width: 25%;
+    }
+
+    .background-car {
+        left: 5px;
+    }
+}
+
+@media (max-width: 867px) {
+    .background-car {
+        left: -10px;
+    }
+
+    .fact-card {
+        width: 192px;
+    }
+
+    .facts__list {
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 750px) {
+    .background-car {
+        width: 90%;
+    }
+
+    .backround-trace {
+        width: 97%;
+    }
+
+    .advantage-row img {
+        width: 100%;
+    }
+
+    .facts {
+        padding: 25px 68px;
+    }
+}
+
+@media (max-width: 718px) {
+    .fact-card__info h4 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 685px) {
+    .nav__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header__inner {
+        gap: 30px;
+    }
+
+    .booking {
+        padding: 15px;
+    }
+
+    .hero__actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 602px) {
+    .footer__right {
+        flex-direction: column;
+    }
+
+    .footer__address {
+        text-align: center;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 574px) {
+    .facts {
+        padding: 16px 50px;
+    }
+}
+
+@media (max-width: 538px) {
+    .facts {
+        padding: 16px 15px;
+    }
+}
+
+@media (max-width: 469px) {
+    .fact-card {
+        width: 148px;
+    }
+    .fact-card__icon {
+        padding: 10px 9px;
+    }
+    .fact-card__info span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 420px) {
+    .fact-card {
+        width: 158px;
+    }
+
+    .fact-card__info span {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .fact-card__icon {
+        padding: 6px 5px;
+    }
+
+    .fact-card {
+        width: 135px;
+    }
+}
+
+@media (max-width: 385px) {}
