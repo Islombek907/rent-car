@@ -295,6 +295,7 @@ input[type="date"] {
 }
 .car-card__features {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 20px;
     justify-content: center;
