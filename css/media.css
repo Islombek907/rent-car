@@ -127,7 +127,11 @@
         left: 5px;
     }
 }
-
+@media (max-width: 921px) {
+    .footer__left {
+        margin-right: 10px;
+    }
+}
 @media (max-width: 867px) {
     .background-car {
         left: -10px;
