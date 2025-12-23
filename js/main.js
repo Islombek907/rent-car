@@ -1,46 +1,28 @@
 const testimonialsSwiper = new Swiper('.testimonials-swiper', {
   loop: true,
-  spaceBetween: 30,
-
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
   },
-
   breakpoints: {
     0: {
       slidesPerView: 1,
       centeredSlides: true,
       spaceBetween: 20,
     },
-
     768: {
       slidesPerView: 2,
       centeredSlides: true,
       spaceBetween: 30,
     },
-    1315: {
-      slidesPerView: 2,
-      centeredSlides: true,
-      spaceBetween: 20,
-    },
-    1549: {
-      slidesPerView:3,
-      centeredSlides: true,
-      spaceBetween: 20,
-    },
-    1550: {
-      slidesPerView: 3,
-      centeredSlides: true,
-      spaceBetween: 20,
-    },
-    1560: {
+    1280: {
       slidesPerView: 2,
       centeredSlides: true,
       spaceBetween: 30,
     },
   },
 });
+
 const brandsSwiper = new Swiper('.brands-swiper', {
   slidesPerView: 'auto',
   loop: true,
